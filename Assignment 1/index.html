@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Affordable Super</title>
+    <link href="style.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <script defer src="script.js"></script>
+    <header>
+      <img class="logo" src="https://1.bp.blogspot.com/-tF67-Gcy6q0/YABXD6afWuI/AAAAAAAAHws/Rwx1bsfshisn1t9mEYfB4YIWURMCBobSwCLcBGAsYHQ/s320/Logo.png" alt="logo" width="200px">
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Our Shops</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <a class="button" href="#"><button>Contact</button></a>
+    </header>
+      <section class="container">
+        <section>
+          <h1><pre>Affordable Super - The <em><strong>best</stong></em> products for the <em><strong>lowest</stong></em> prices</pre></h1>
+            <p>
+              At Affordable Super you can get the freshest fruit and the
+              healthiest vegetables for the lowest prices due to our <abbr title="Buy One, Get One Free">BOGOF</abbr> policy. Do not believe us?
+              Come see for yourselves!
+            </p>
+        </section>
+
+
+        <section>
+          <form class="table1" action="http://localhost:3000/items" method="POST" >
+            <table id="myTable">
+              <thead>
+                <tr>
+                  <th class="pointing" onclick="sortTable(0)"> Product </th>
+                  <th class="pointing" onclick="sortTable(1)"> Origin </th>
+                  <th class="pointing" onclick="sortTable(2)"> Best before date </th>
+                  <th class="pointing" onclick="sortTable(3)"> Amount </th>
+                  <th class="pointing" onclick="sortTable(4)"> Image </th>
+                </tr>
+              </thead>
+              <tbody id="productinfo">
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td><br>Product:<br> <input class="input" type="text" id="product" name="product" required></td>
+                  <td><br>Origin: <input class="input" type="text" id="origin" name="origin" required></td>
+                  <td><br>Best before date: <input class="input" type="text" id="best_before_date" name="best_before_date" required></td>
+                  <td><br>Amount: <input class="input" type="amount" id="amount" name="amount" required></td>
+                  <td><br>Image: <input class="input" type="text" id="image" name="image" required></td>
+                </tr>
+                <tr>
+                  <th><button type="button" onclick="addProduct()">Submit</button></th>
+                  <th><button type="button" onclick="resetForm()">Reset</button></th>
+                  <th><button type="button" onclick="addDoc()">Request</button></th>
+                </tr>
+              </tfoot>
+            </table>
+          </form>
+        </section>
+
+
+        <table class="table2">
+            <caption>Best deals of the week</caption>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Origin</th>
+                <th>Best before date</th>
+                <th>Amount</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Chicken breast</td>
+                <td>The Netherlands</td>
+                <td>10/02/2021</td>
+                <td>300gram</td>
+                <td><img src="https://static.hanos.com/sys-master/productimages/hac/h5b/8982653009950/326.56903.jpg_914Wx914H" alt="Chicken breast" width="100"></td>
+              </tr>
+              <tr>
+                <td>French fries</td>
+                <td>France</td>
+                <td>24/02/2021</td>
+                <td>1.4kg</td>
+                <td><img src="https://static.ah.nl/static/product/AHI_43545239363737353532_1_LowRes_JPG.JPG?options=399,q85" alt="French fries" width="100"></td>
+              </tr>
+              <tr>
+                <td>Grape juice</td>
+                <td>Belgium</td>
+                <td>03/04/2021</td>
+                <td>1 liter</td>
+                <td><img src="https://static.ah.nl/static/product/AHI_434d50323238363431_1_LowRes_JPG.JPG?options=399,q85" alt="Grape juice" width="100"></td>
+              </tr>
+              <tr>
+                <td>Olive oil</td>
+                <td>Italy</td>
+                <td>22/07/2022</td>
+                <td>1 liter</td>
+                <td><img src="https://static.ah.nl/static/product/AHI_43545239363730333730_1_LowRes_JPG.JPG?options=399,q85" alt="Olive oil" width="100"></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <section class="recipes">
+          <h2>Top 5 recipes</h2>
+            <ol>
+              <li>Lemon drizzle cake</li>
+              <li>Chilli con carne</li>
+              <li>Carrot cake</li>
+              <li>Spiced carrot and lentil soup</li>
+              <li>Mustard-stuffed chicken</li>
+            </ol>
+          </section>
+
+        <section class="employee">
+          <h2>Employee of the Month</h2>
+            <figure>
+              <img src="https://images.generated.photos/U40wNw7O_7EZVTju-p_Ub60WnJq9r6EkQY-Q9B1-AGQ/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA4Nzk0ODMuanBn.jpg" alt="employee_of_the_month" height="250">
+              <figcaption>Michel Lawinski</figcaption>
+            </figure>
+        </section>
+
+        <section class="team">
+          <h2>Contact Information</h2>
+            <dl>
+              <dt>Ariana Robson</dt>
+              <dt id="owner">Owner and Manager</dt>
+                <br>
+                <dd>06 12 34 56 78</dd>
+                <dd>arianarobson@gmail.com</dd>
+            </dl>
+          </section>
+        </section>
+  </body>
+</html>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+
+
+
+<!-- Compatibility Report
+My experiences while testing the HTML and CSS markup of affordable super are positive.
+I used Chrome and Firefox to test the different markups, but they were very similar.
+Furthermore, I changed the size of the browser to see how it would react on different screensizes.
+Auto margin, width and aligning the different sections to their designated spot makes the compatibility a lot better.
+Using the print option on both browsers gives a good insight and thus is a helpful tool on how the markup makes the webpage look. -->

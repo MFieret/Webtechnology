@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0
+  padding 0;
+  font-family: sans-serif;
+  color: #202020;
+  font-weight: normal;
+}
+
+@media print {
+  h1 {page-break-before: auto;}
+  h2 {page-break-after: auto;}
+}
+
+body {
+  background-image: url("https://www.gigabyte.com/FileUpload/Global/KeyFeature/1029/img/vga/21.png");
+  background-repeat: no-repeat;
+  background: white url("https://www.gigabyte.com/FileUpload/Global/KeyFeature/1029/img/vga/21.png") no-repeat fixed center;
+  orphans: 1;
+  widows: 1;
+}
+
+header li, header a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding: 30px 10%;
+  background-color: #24252A;
+}
+
+.logo {
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navigation li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navigation li a:hover {
+  color: #0088a9
+}
+
+.navigation li a:link {
+  color: #0088a9
+}
+
+.navigation li a:visited {
+  color: #edf0f2
+}
+
+.navigation li a:active {
+  color: #0088a9
+}
+
+.navigation li a:focus {
+  color: #0088a9
+}
+
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-style: none;
+  border-spacing: inherit;
+  border-width: thin;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.table1 {
+  padding: 24px;
+  width: 960px;
+  margin: 16px auto;
+  border-bottom: 2px solid #202020;
+}
+
+.table2 {
+  margin: 16px;
+  padding: 24px;
+  float: left;
+}
+
+.employee {
+  margin: 16px;
+  float: right;
+  width: 296px;
+}
+
+.recipes {
+  margin: 16px;
+  float: right;
+  width: 296px;
+}
+
+.team {
+  margin: 16px;
+  float: left;
+  text-align: left;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  font-size: 24px;
+  caption-side: top;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-variant: normal;
+  font: normal bold 30px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+
+}
+p {
+  padding: 12px 0;
+  border-bottom: 2px solid #202020;
+}
+
+#owner {
+  font-style: italic;
+}
+
+dd {
+  text-indent: -1.5em;
+}
+
+abbr {
+  text-transform: capitalize;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  list-style-image: none;
+  list-style: decimal inside none;
+}
+
+.input {
+  width: 100%;
+}
+
+.productpicture {
+  width: 100px;
+}
