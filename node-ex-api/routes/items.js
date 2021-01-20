@@ -22,17 +22,14 @@ router.get('/:id', function (req, res) {
 });
 
 router.post('/', function (req, res) {
-    let itemIds = data.map(item => item.id);
-    let orderNums = data.map(item => item.order);
-    let newId = itemIds.length > 0 ? Math.max.apply(Math, itemIds) + 1 : 1;
-    let newOrderNum = orderNums.length > 0 ? Math.max.apply(Math, orderNums) + 1 : 1;
 
     let newItem = {
-        id: newId,
-        title: req.body.title,
-        order: newOrderNum,
-        completed: false,
-        createdOn: new Date()
+        id: req.body.id,
+        product: req.body.product,
+        origin: req.body.origin,
+        best_before_date: req.body.best_before_date,
+        amount: req.body.amount,
+        image: req.body.image
     };
 
     data.push(newItem);
@@ -47,9 +44,11 @@ router.put('/:id', function (req, res) {
     if (found) {
         let updated = {
             id: found.id,
-            title: req.body.title,
-            order: req.body.order,
-            completed: req.body.completed
+            product: req.body.product,
+            origin: req.body.origin,
+            best_before_date: req.body.best_before_date,
+            amount: req.body.amount,
+            image: req.body.image
         };
 
         let targetIndex = data.indexOf(found);
