@@ -5,13 +5,8 @@ const itemsRouter = require('./routes/items');
 
 const app = express();
 app.use(express.json());
-app.use(cors({origin: 'http://localhost:8100'}));
-
+app.use(cors());
 app.use('/items', itemsRouter);
-
-app.use('/', function(req, res) {
-    res.send('node-ex-api works :-)');
-});
 
 const server = http.createServer(app);
 const port = 3000;
